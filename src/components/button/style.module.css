@@ -1,0 +1,84 @@
+/* Палитра и дефолты (dark) */
+:root {
+  color: #fff;
+  background-color: #242424;
+
+  --btn-bg: #1a1a1a;
+  --btn-fg: #fff;
+  --btn-border: transparent;
+  --btn-hover-border: #646cff;
+
+  --btn-accent: #3e6ae1; /* для .active / aria-pressed */
+  --btn-accent-fg: #fff;
+}
+
+/* База для <button> и .button */
+button,
+.button {
+  min-width: 120px;
+  border-radius: 8px;
+  border: 1px solid var(--btn-border);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--btn-bg);
+  color: var(--btn-fg);
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.25s ease,
+    opacity 0.2s ease, transform 0.05s ease;
+}
+
+/* Hover */
+button:hover,
+.button:hover {
+  border-color: var(--btn-hover-border);
+  opacity: 0.9;
+}
+
+/* Фокус */
+button:focus,
+.button:focus,
+button:focus-visible,
+.button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+  outline-offset: 2px;
+}
+
+/* Нажатие */
+button:active,
+.button:active {
+  transform: translateY(1px);
+}
+
+/* Включено / выбранное */
+button.active,
+.button.active,
+button[aria-pressed='true'],
+.button[aria-pressed='true'] {
+  background: var(--btn-accent);
+  color: var(--btn-accent-fg);
+  border-color: var(--btn-accent);
+}
+
+/* Отключено */
+button:disabled,
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background: #ffffff;
+}
+
+/* Светлая тема */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+
+    --btn-bg: #f9f9f9;
+    --btn-fg: #213547;
+  }
+  a:hover {
+    color: #747bff;
+  }
+}
