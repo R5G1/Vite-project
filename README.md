@@ -4,22 +4,25 @@
 Vite, React, CSS Modules
 
 ## Запуск
-npm i
-npm run dev
+- `npm i`
+- `npm run dev`
 
 ## Скрипты
-- `npm run lint`
-- `npm run format`
 - `npm run build`
+- `npm run lint`
+- `npm run preview`
 
 ## Структура
 src/
+  assets/
   components/
-  features/
-  styles/
-
-## Переменные окружения
-Смотри `.env.example`
+    Button/
+    Modal/
+    ContentCard/
+    section/
+    styles/
+  App.jsx
+  main.jsx
 
 ## Скриншоты
-(вставь позже)
+![alt text](image.png)

@@ -1,4 +1,4 @@
-import { Button } from '../button/button';
+import { Button } from '../Button/button';
 import classes from '../styles/PortfolioSection.module.css';
 import Modal from '../modal/Modal';
 import { useState, useEffect } from 'react';

@@ -1,7 +1,7 @@
 import classes from './Modal.module.css';
 import { createPortal } from 'react-dom';
 import { useRef, useEffect } from 'react';
-import { Button } from '../button/button';
+import { Button } from '../Button/button';
 
 export default function Modal({ children, isOpen, onClose }) {
   const dialogRef = useRef(null);

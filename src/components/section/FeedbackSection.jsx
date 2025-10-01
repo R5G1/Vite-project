@@ -1,7 +1,7 @@
 import { contactsContents } from '../data';
-import ShowMainComponents from '../ShowMainComponents';
+import ContentCard from '../ContentCard/ContentCard';
 import classes from '../styles/FeedbackSection.module.css';
-import { Button } from '../button/button';
+import { Button } from '../Button/button';
 import { useState } from 'react';
 
 export default function FeedbackSection() {
@@ -53,10 +53,10 @@ export default function FeedbackSection() {
     <section className={classes.feedbackSection}>
       <>
         {contactsContents.map((item) => (
-          <ShowMainComponents key={item.contentTitle}>
+          <ContentCard key={item.contentTitle}>
             <h3>{item.contentTitle}</h3>
             <p>{item.contentBody}</p>
-          </ShowMainComponents>
+          </ContentCard>
         ))}
       </>
 

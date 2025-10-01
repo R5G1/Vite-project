@@ -1,5 +1,4 @@
-
-import {Button} from '../button/button';
+import { Button } from '../Button/button';
 
 export default function TabsSections({ activeTab, setActiveTab }) {
   const array = ['Главная страница', 'О нас', 'Портфолио', '📞 Контакты'];
@@ -8,11 +7,7 @@ export default function TabsSections({ activeTab, setActiveTab }) {
     <div className="tabs-sections">
       <>
         {array.map((item) => (
-          <Button
-            key={item}
-            isActive={item === activeTab}
-            onClick={() => setActiveTab(item)}
-          >
+          <Button key={item} isActive={item === activeTab} onClick={() => setActiveTab(item)}>
             {item}
           </Button>
         ))}
