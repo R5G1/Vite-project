@@ -1,11 +1,11 @@
-import Header from './components/Section/Header.jsx';
-import TabsSections from './components/Section/TabsSections.jsx';
-import IntroductoryInfoSection from './components/Section/IntroductoryInfoSection.jsx';
+import Header from './components/section/Header.jsx';
+import TabsSections from './components/section/TabsSections.jsx';
+import IntroductoryInfoSection from './components/section/IntroductoryInfoSection.jsx';
 
-import DifferenceSection from './components/Section/DifferenceSection.jsx';
-import FunctionalBtnSection from './components/Section/functionalBtnSection.jsx';
-import PortfolioSection from './components/Section/PortfolioSection.jsx';
-import FeedbackSection from './components/Section/FeedbackSection.jsx';
+import DifferenceSection from './components/section/DifferenceSection.jsx';
+import FunctionalBtnSection from './components/section/FunctionalBtnSection.jsx';
+import PortfolioSection from './components/section/PortfolioSection.jsx';
+import FeedbackSection from './components/section/FeedbackSection.jsx';
 
 import { useState } from 'react';
 
