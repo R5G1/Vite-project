@@ -1,7 +1,7 @@
 import { contactsContents } from '../data';
 import ContentCard from '../ContentCard/ContentCard';
 import classes from '../styles/FeedbackSection.module.css';
-import { Button } from '../Button/button';
+import { Button } from '../Button/Button';
 import { useState } from 'react';
 
 export default function FeedbackSection() {

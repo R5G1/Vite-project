@@ -1,6 +1,6 @@
-import { Button } from '../Button/button';
+import { Button } from '../Button/Button';
 import classes from '../styles/PortfolioSection.module.css';
-import Modal from '../modal/Modal';
+import Modal from '../Modal/Modal';
 import { useState, useEffect } from 'react';
 
 export default function PortfolioSection() {

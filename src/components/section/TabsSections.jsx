@@ -1,4 +1,4 @@
-import { Button } from '../Button/button';
+import { Button } from '../Button/Button';
 
 export default function TabsSections({ activeTab, setActiveTab }) {
   const array = ['Главная страница', 'О нас', 'Портфолио', '📞 Контакты'];
